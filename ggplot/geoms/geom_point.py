@@ -3,7 +3,7 @@ import numpy as np
 from ..utils import is_date
 
 def _date_to_number(i):
-    return i.toordinal() + i.time().hour/24 + i.time().minute/1440 + i.time().second/86400
+    return i.toordinal() + i.time().hour/24. + i.time().minute/1440. + i.time().second/86400.
 
 class geom_point(geom):
     """
